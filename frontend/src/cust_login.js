@@ -7,7 +7,7 @@ import './index.css';
 
 const Custlogin = () => {
 
-    const url="https://rivison-project-backend.onrender.com"
+
     const [m,setm]=useState();
     const [p,setp]=useState();
     const [cpass,setcpass]=useState();
