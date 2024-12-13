@@ -3,7 +3,7 @@ const app = express();
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const multer = require('multer');
-
+const port=9000;
 const mongoose = require('mongoose');
 const signupmodel = require('./model/signupmodel');
 const pagemodel = require('./model/pagemodel');
@@ -133,6 +133,6 @@ app.get("/page", async (req, res) => {
     }
 });
 
-app.listen(9000, () => {
+app.listen(port, () => {
     console.log("Server Started");
 });
