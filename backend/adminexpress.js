@@ -3,7 +3,6 @@ const app = express();
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const multer = require('multer');
-
 const mongoose = require('mongoose');
 const signupmodel = require('./model/signupmodel');
 const pagemodel = require('./model/pagemodel');
