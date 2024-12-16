@@ -47,7 +47,7 @@ app.post("/login", async (req, res) => {
         const re = await signupmodel.findOne({ mobile: req.body.mob, password: req.body.psw })
         if (re) {
             res.cookie("mycookie", req.body.m).json({ msg: "Valid User" });
-
+            
         }
         else {
             res.json({ msg: "Invalid User" });

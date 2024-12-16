@@ -17,7 +17,7 @@ const Admin = () => {
         loadrecord();
     })
        const loadrecord = async () => {
-        const re = await fetch("http://127.0.0.1:9000/page", {
+        const re = await fetch("https://rivison-project-backend.onrender.com/page", {
             method: "GET",
             headers: { "Content-Type": "Application/json" }
         });
@@ -29,7 +29,7 @@ const Admin = () => {
     const deleteRecord = async (m) => {
         if (window.confirm("Sure! Want To Delete"));
         {
-            const re = await fetch("http://127.0.0.1:9000/page", {
+            const re = await fetch("https://rivison-project-backend.onrender.com/page", {
                 method: "DELETE",
                 headers: { "Content-Type": "Application/json" },
                 body: JSON.stringify({ rid: m })
@@ -67,7 +67,7 @@ const Admin = () => {
                                     <td>{x.department}</td>
                                     <td>{x.message}</td>
                                     <td>
-                                        <img style={{ width: "150px" }} src={"http://127.0.0.1:9000/" + x.screenshot} />
+                                        <img style={{ width: "150px" }} src={"https://rivison-project-backend.onrender.com/" + x.screenshot} />
                                     </td>
                                     <td>
                                         <button className="btn btn-danger" onClick={() => { deleteRecord(x._id) }}>Delete</button>

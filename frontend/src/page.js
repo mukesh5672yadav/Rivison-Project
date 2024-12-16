@@ -57,7 +57,7 @@ const Page = () => {
             fdata.append("pro_pic", sc);
             fdata.append("msg", msg);
 
-            const re = await fetch("http://127.0.0.1:9000/page", {
+            const re = await fetch("https://rivison-project-backend.onrender.com/page", {
                 method: "POST",
                 body: fdata
             });
