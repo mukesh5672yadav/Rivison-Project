@@ -37,7 +37,7 @@ const Adminlogin = () => {
         }
 
         else {
-            const re = await fetch("https://rivison-project-backend.onrender.com/signup", {
+            const re = await fetch("http://127.0.0.1:9000/signup", {
                 method: "POST",
                 headers: { "Content-Type": "Application/json" },
                 body: JSON.stringify({ mob: m, psw: p })
@@ -74,7 +74,7 @@ const Adminlogin = () => {
             alert("Please Enter Password");
         }
         else {
-            const re = await fetch("https://rivison-project-backend.onrender.com/login", {
+            const re = await fetch("http://127.0.0.1:9000/login", {
                 method: "POST",
                 headers: { "Content-Type": "Application/json" },
                 body: JSON.stringify({ mob: mo, psw: pa }),
